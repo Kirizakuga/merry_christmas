@@ -33,11 +33,9 @@ try:
         tree_drawing += (Fore.YELLOW + trunk + "\n")
         tree_drawing += "\nPress CTRL + C to stop."
 
-        # Print the finished tree all at once for a smooth animation
+
         sys.stdout.write(tree_drawing)
         sys.stdout.flush()
-
-        # Pause before the next frame
         time.sleep(0.5)
 
 except KeyboardInterrupt:
